@@ -3,7 +3,10 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Cups;
+
 use Illuminate\Http\Request;
+
 
 class CupsController extends Controller {
 
@@ -14,51 +17,8 @@ class CupsController extends Controller {
 	 */
 	public function index()
 	{
-		$controlNumbers = array(
-			0 => 'T',
-			1 => 'R',
-			2 => 'W',
-			3 => 'A',
-			4 => 'G',
-			5 => 'M',
-			6 => 'Y',
-			7 => 'F',
-			8 => 'P',
-			9 => 'D',
-			10 => 'X',
-			11 => 'B',
-			12 => 'N',
-			13 => 'J',
-			14 => 'Z',
-			15 => 'S',
-			16 => 'Q',
-			17 => 'V',
-			18 => 'H',
-			19 => 'L',
-			20 => 'C',
-			21 => 'K',
-			22 => 'E',
-		);
-
-		$pais = 'ES';
-		$reeId = mt_rand(0, 9999);//4 numeros dados por la Red electrica de España
-		$distId = mt_rand(0, 999999999999);//12 numeros Id del distribuidor
-
-		for ($reeLength = strlen($reeId); $reeLength < 4; $reeLength++) {
-			$reeId = '0' . $reeId;
-		}
-
-		for ($distLength = strlen($distId); $distLength < 12; $distLength++) {
-			$distId = '0' . $distId;
-		}
-
-		$control = ($reeId . $distId) % 529;
-		$c = $control / 23;
-		$r = $control % 23;
-
-		$cups = $pais . $reeId . $distId . $controlNumbers[(int)$c] . $controlNumbers[$r];
-
-		return view('cups/index', compact('cups'));
+            $cups = new Cups();
+            return view('cups/index', ['cups' => $cups->generate()]);
 	}
 
 	/**
