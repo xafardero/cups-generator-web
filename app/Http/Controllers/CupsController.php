@@ -56,7 +56,7 @@ class CupsController extends Controller {
 		$c = $control / 23;
 		$r = $control % 23;
 
-		$cups = $pais . $reeId . $distId . (int)$c . $r;
+		$cups = $pais . $reeId . $distId . $controlNumbers[(int)$c] . $controlNumbers[$r];
 
 		return view('cups/index', compact('cups'));
 	}
