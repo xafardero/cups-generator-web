@@ -9,10 +9,6 @@
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        @section('sidebar')
-        This is the master sidebar.
-        @show
-
         <div class="container">
             @yield('content')
         </div>
@@ -22,17 +18,22 @@
     </body>
     <!-- Piwik -->
     <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//stats.xaftrials.in/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//stats.xaftrials.in/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 2]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'piwik.js';
+            s.parentNode.insertBefore(g, s);
+        })();
     </script>
-    <noscript><p><img src="//stats.xaftrials.in/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <noscript><p><img src="//stats.xaftrials.in/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
     <!-- End Piwik Code -->
+
 </html>
