@@ -17,6 +17,7 @@ class CupsController extends Controller {
 	 */
 	public function index()
 	{
+        dd('x');
             $cups = new Cups();
             return view('cups/index', ['cups' => $cups->generate()]);
 	}
