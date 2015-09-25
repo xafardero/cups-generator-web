@@ -1,12 +1,7 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
 use App\Cups;
-
-use Illuminate\Http\Request;
-
 
 class CupsController extends Controller {
 
@@ -17,9 +12,8 @@ class CupsController extends Controller {
 	 */
 	public function index()
 	{
-        dd('x');
-            $cups = new Cups();
-            return view('cups/index', ['cups' => $cups->generate()]);
+        $cups = new Cups();
+        return view('cups/index', ['cups' => $cups->generate()]);
 	}
 
 	/**
