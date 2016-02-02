@@ -5,7 +5,7 @@
     <div class="col-md-6 col-md-offset-3 ">
         <h1 class="text-center">CUPS</h1>
         <h2 class="text-center">Generador aleatorio</h2>
-        <form class="form-horizontal">
+        <form>
             <div class="form-group">
                 <input name="cups" type="text" value="{!! $cups; !!}" class="form-control text-center">
             </div>
