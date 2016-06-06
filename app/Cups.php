@@ -2,11 +2,23 @@
 
 namespace App;
 
+/**
+ * Class to generate a random cups
+ */
 class Cups
 {
+    /**
+     * Cups id
+     *
+     * @param $string
+     */
+    private $id;
 
-    protected $id;
-
+    /**
+     * Generate a Random cups
+     *
+     * @return string
+     */
     public function generate()
     {
         $reeId = $this->_generateReeId();
@@ -28,9 +40,10 @@ class Cups
     /**
      * Genera los 4 numeros dados por la Red electrica de España
      *
+     * @todo improve this for
      * @return string
      */
-    protected function _generateReeId()
+    private function _generateReeId()
     {
         $id = mt_rand(0, 9999);
 
@@ -44,9 +57,10 @@ class Cups
     /**
      * Genera los 12 numeros Id del distribuidor
      *
+     * @todo improve this for
      * @return string
      */
-    protected function _generateDistId()
+    private function _generateDistId()
     {
         $id = mt_rand(0, 999999999999);
 
@@ -62,7 +76,7 @@ class Cups
      *
      * @return string
      */
-    protected function _getCountry()
+    private function _getCountry()
     {
         return 'ES';
     }
@@ -70,9 +84,9 @@ class Cups
     /**
      * Retorna array with control
      *
-     * @return string
+     * @return array
      */
-    protected function _getControlNumbers()
+    private function _getControlNumbers()
     {
         return array(
             0 => 'T',
@@ -104,9 +118,10 @@ class Cups
     /**
      * Retorna array with control
      *
+     * @todo improve the return
      * @return string
      */
-    protected function _getControlNumbersBy($id)
+    private function _getControlNumbersBy($id)
     {
         $controlNumber = $this->_getControlNumbers();
 
