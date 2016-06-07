@@ -1,6 +1,6 @@
 <?php
 
-use App\Cups;
+use CupsGenerator\Cups;
 
 Route::get('/', function () {
      return view('cups/index', ['cups' => (new Cups())->generate()]);
