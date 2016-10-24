@@ -14,6 +14,6 @@ class ExampleTest extends TestCase
     public function testBasicExample()
     {
         $this->visit('/')
-             ->see('Generador aleatorio de CUPS');
+             ->see('Generador aleatorio de CUPS ERROR');
     }
 }
