@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('cups', function() {
     return view('cups/index', ['cups' => (new Cups())->generate()]);
 });
+Route::get('/cookies', function() {
+    return view('cookies/cookies');
+});
+
