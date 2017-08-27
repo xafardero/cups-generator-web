@@ -15,7 +15,8 @@
         <blockquote id="wiki">
             <p>
                 El CUPS (Código Universal del Punto de Suministro), en España, es un código único e 
-                identificador de un punto de suministro de energía, ya sea de electricidad o gas canalizado(...)
+                identificador de un punto de suministro de energía, ya sea de electricidad o gas canalizado.
+                (...)
             </p>
             <footer>
                 <a rel="nofollow" href="https://es.wikipedia.org/wiki/C%C3%B3digo_Universal_de_Punto_de_Suministro">
