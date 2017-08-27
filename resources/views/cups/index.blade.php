@@ -27,10 +27,5 @@
             </footer>
         </blockquote>
     </div>
-    <div>
-        <h6>
-            <a href="/cookies">Usamos cookies</a>
-        </h6>
-    </div>
 </div>
 @stop

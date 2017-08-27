@@ -23,6 +23,11 @@
         <div class="container-fluid">
             @yield('content')
         </div>
+        <footer class="footer">
+            <p>
+            made with <span class="heart">&hearts;</span> by <a href="https://github.com/xafardero">xaf</a>
+            </p>
+        </footer>
         <!-- Scripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->

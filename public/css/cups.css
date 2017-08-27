@@ -2,3 +2,11 @@ body {background: #2D3037;}
 h1 { color: #de935f; }
 h2 { color: #b5bd68; }
 #wiki { color: #FFF; }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #b5bd68;
+    text-align: center;
+}
+.heart {color: #ff0000 }
